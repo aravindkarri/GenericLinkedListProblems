@@ -69,5 +69,16 @@ public class LinkedListMain
 		System.out.println("After removing the last element : ");
 		listInteger4.print();
 		
+		/**UC7
+		 * Search linked list to find a node
+		 */
+		LinkedList<Integer> listInteger5 = new LinkedList<>();
+		listInteger5.append(56);
+		listInteger5.append(30);
+		listInteger5.append(70);
+		
+		System.out.println("searching for key 30 :");
+		listInteger5.search(30);
+		
 	}
 }

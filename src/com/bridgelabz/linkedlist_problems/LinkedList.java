@@ -76,7 +76,24 @@ public class LinkedList<T>
 		}
 		tempNode.next = null;
 		return tempNode.data;
-	}		
+	}
+	/**
+	 * Method to search for a key in linked list
+	 * @param key
+	 */
+	public void search (T key)
+	{
+		Node<T> tempNode = head;
+		while(tempNode != null)
+		{
+			if(tempNode.data == key)
+			{
+				System.out.println("Key found");
+				break;
+			}
+			tempNode = tempNode.next;
+		}
+	}
 	/**
 	 * Method to print linkedlist
 	 */
