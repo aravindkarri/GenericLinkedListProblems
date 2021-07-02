@@ -53,8 +53,21 @@ public class LinkedListMain
 		listInteger3.pop();
 		
 		//print linked list
-		System.out.println("After removing the the first element: ");
+		System.out.println("After removing the first element: ");
 		listInteger3.print();
+		
+		/**UC6
+		 * Delete the last element of linked list
+		 */
+		LinkedList<Integer> listInteger4 = new LinkedList<>();
+		listInteger4.append(56);
+		listInteger4.append(30);
+		listInteger4.append(70);
+		listInteger4.popLast();
+		
+		//print linked list
+		System.out.println("After removing the last element : ");
+		listInteger4.print();
 		
 	}
 }

@@ -51,6 +51,9 @@ public class LinkedList<T>
 		newNode.next = prevNode.next;
 		prevNode.next = newNode;
 	}
+	/**
+	 * Method to delete first node 
+	 */
 	public T pop()
 	{
 		if (head == null)
@@ -61,6 +64,19 @@ public class LinkedList<T>
 		head = head.next;
 		return tempNode.data;
 	}
+	/**
+	 * Method to delete last node
+	 */
+	public T popLast()
+	{
+		Node<T> tempNode = head;
+		while(tempNode.next.next!= null)
+		{
+			tempNode = tempNode.next;
+		}
+		tempNode.next = null;
+		return tempNode.data;
+	}		
 	/**
 	 * Method to print linkedlist
 	 */
