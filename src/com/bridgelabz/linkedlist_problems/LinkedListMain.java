@@ -29,5 +29,17 @@ public class LinkedListMain {
 		//print linked list
 		System.out.println("After appending elements to linked list: ");
 		listInteger1.print();
+		
+		/**UC4
+		 * Inserting a new node 30 between 56 and 70.
+		 */
+		LinkedList<Integer> listInteger2 = new LinkedList<>();
+		listInteger2.append(56);
+		listInteger2.append(70);
+		listInteger2.insertAfter(listInteger2.head,30);
+		
+		//print linked list
+		System.out.println("After inserting 30 between 56 and 70 : ");
+		listInteger2.print();
 	}
 }

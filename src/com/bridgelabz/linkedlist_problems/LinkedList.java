@@ -40,6 +40,18 @@ public class LinkedList<T>
 		}
 	}
 	/**
+	 * Method to insert a node after given node
+	 * @param prevNode
+	 * @param data
+	 */
+	public void insertAfter(Node<T> prevNode, T data)
+	{
+		Node <T> newNode = new Node<T>();
+		newNode.data = data;
+		newNode.next = prevNode.next;
+		prevNode.next = newNode;
+	}
+	/**
 	 * Method to print linkedlist
 	 */
 	public void print()
