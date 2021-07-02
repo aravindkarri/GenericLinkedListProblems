@@ -95,6 +95,23 @@ public class LinkedList<T>
 		}
 	}
 	/**
+	 * Method to search for a key and insert a new node after the key.
+	 * @param key
+	 * @param data
+	 */
+	public void insertAfterNode(T key,T data)
+	{
+		Node<T> newNode = new Node<T>();
+		newNode.data = data;
+		Node<T> tempNode = head;
+		while(tempNode.data != key)
+		{
+			tempNode = tempNode.next;
+		}
+		newNode.next = tempNode.next;
+		tempNode.next = newNode;
+	}
+	/**
 	 * Method to print linkedlist
 	 */
 	public void print()

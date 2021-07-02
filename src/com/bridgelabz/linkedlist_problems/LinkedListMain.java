@@ -80,5 +80,18 @@ public class LinkedListMain
 		System.out.println("searching for key 30 :");
 		listInteger5.search(30);
 		
+		/**UC8
+		 * Insert a new node after a given key value
+		 */
+		LinkedList<Integer> listInteger6 = new LinkedList<>();
+		listInteger6.append(56);
+		listInteger6.append(30);
+		listInteger6.append(70);
+		listInteger6.insertAfterNode(30, 40);
+		
+		//print linked list
+		System.out.println("Inserting a new node 40 after 30 : ");
+		listInteger6.print();
+		
 	}
 }
