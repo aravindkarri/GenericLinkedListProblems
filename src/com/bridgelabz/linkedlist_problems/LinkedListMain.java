@@ -103,8 +103,25 @@ public class LinkedListMain
 		listInteger7.append(70);
 		listInteger7.deleteNode(40);
 		
+		//print linked list and size of linked list
 		System.out.println("After deleting key 40 from linked list ");
 		listInteger7.print();
+		listInteger7.size();
+		
+		/**UC10
+		 * Create ordered linked list in ascending order
+		 */
+		
+		LinkedList<Integer> listInteger8 = new LinkedList<>();
+		listInteger8.append(56);
+		listInteger8.append(30);
+		listInteger8.append(40);
+		listInteger8.append(70);
+		listInteger8.sortList();
+		
+		//print linked list
+		System.out.println("Linked list in ascending order after sorting: ");
+		listInteger8.print();
 
 	}
 }
