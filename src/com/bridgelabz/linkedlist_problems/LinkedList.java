@@ -17,6 +17,29 @@ public class LinkedList<T>
 		head = newNode;
 	}
 	/**
+	 * Method to append new nodes to linkedlist
+	 * @param data
+	 */
+	public void append(T data)
+	{
+		Node<T> newNode = new Node<T>();
+		newNode.data = data;
+		newNode.next = null;
+		if (head == null)
+		{
+			head = newNode;
+		}
+		else 
+		{
+			Node<T> tempNode = head;
+			while(tempNode.next != null)
+			{
+				tempNode = tempNode.next;
+			}
+			tempNode.next = newNode;
+		}
+	}
+	/**
 	 * Method to print linkedlist
 	 */
 	public void print()

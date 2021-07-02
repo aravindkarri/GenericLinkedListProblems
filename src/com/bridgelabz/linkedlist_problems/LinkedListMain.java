@@ -17,5 +17,17 @@ public class LinkedListMain {
 		//print linked list
 		System.out.println("After adding elements to linked list: ");
 		listInteger.print();
+		
+		/**UC3
+		 * Appending elements to linked list
+		 */
+		LinkedList<Integer> listInteger1 = new LinkedList<>();
+		listInteger1.append(56);
+		listInteger1.append(30);
+		listInteger1.append(70);
+		
+		//print linked list
+		System.out.println("After appending elements to linked list: ");
+		listInteger1.print();
 	}
 }
