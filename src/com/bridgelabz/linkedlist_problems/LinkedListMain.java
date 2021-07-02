@@ -7,7 +7,7 @@ public class LinkedListMain {
 		
 		LinkedList<Integer> listInteger = new LinkedList<>();
 		
-		/**UC1
+		/**UC1&2
 		 * Adding elements to linked list
 		 */
 		listInteger.add(70);
