@@ -112,6 +112,22 @@ public class LinkedList<T>
 		tempNode.next = newNode;
 	}
 	/**
+	 * Method to delete a node in linked list
+	 * @param key
+	 */
+	
+	public void deleteNode(T key)
+	{
+		Node<T> tempNode = head;
+		Node<T> prevNode = head;
+		while(tempNode.data != key)
+		{
+			prevNode = tempNode;
+			tempNode = tempNode.next;
+		}
+		prevNode.next = tempNode.next;
+	}
+	/**
 	 * Method to print linkedlist
 	 */
 	public void print()
