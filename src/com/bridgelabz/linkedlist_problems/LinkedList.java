@@ -51,6 +51,16 @@ public class LinkedList<T>
 		newNode.next = prevNode.next;
 		prevNode.next = newNode;
 	}
+	public T pop()
+	{
+		if (head == null)
+		{
+			return null;
+		}
+		Node<T> tempNode = head;
+		head = head.next;
+		return tempNode.data;
+	}
 	/**
 	 * Method to print linkedlist
 	 */

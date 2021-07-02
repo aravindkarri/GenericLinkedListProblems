@@ -1,6 +1,7 @@
 package com.bridgelabz.linkedlist_problems;
 
-public class LinkedListMain {
+public class LinkedListMain 
+{
 
 	public static void main(String[] args) 
 	{
@@ -41,5 +42,19 @@ public class LinkedListMain {
 		//print linked list
 		System.out.println("After inserting 30 between 56 and 70 : ");
 		listInteger2.print();
+		
+		/**UC5
+		 * Delete the first element in linked list
+		 */
+		LinkedList<Integer> listInteger3 = new LinkedList<>();
+		listInteger3.append(56);
+		listInteger3.append(30);
+		listInteger3.append(70);
+		listInteger3.pop();
+		
+		//print linked list
+		System.out.println("After removing the the first element: ");
+		listInteger3.print();
+		
 	}
 }
